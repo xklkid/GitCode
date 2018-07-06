@@ -10,4 +10,6 @@ creating a new branch is quick
 
 creating a new branch is quick and simple
 
-new creating issue-101
+new creating
+
+git stash
