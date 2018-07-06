@@ -7,3 +7,5 @@ we add a line word.
 this is we third add
 
 creating a new branch is quick
+
+creating a new branch is quick & simple
