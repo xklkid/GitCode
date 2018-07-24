@@ -1,0 +1,101 @@
+1、初始设置：
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+2、仓库初始化：
+git init
+
+3、文件添加到仓库：
+git add readme.txt
+
+4、文件提交到仓库：
+git commit -m "wrote a readme file"
+
+5、查看状态：
+git status
+
+6、文件修改比较：
+git diff readme.txt
+
+7、log查看：
+git log
+git log --pretty=oneline
+
+8、版本回退：
+git reset --hard HEAD^	//上一个版本
+git reset --hard HEAD^^	//上上一个版本
+git reset --hard 3628164
+
+9、查看未来的版本：
+git reflog
+
+10、使用beyondcompare差分文件设置：
+git config --global diff.tool bc3
+git config --global difftool.bc3.path "D:\BeyondCompare4/BComp.exe"
+git difftool 版本1 版本2 文件名
+
+11、丢弃工作区的修改（回到最近一次commit或add时的状态）：
+git checkout：用版本库里的版本替换工作区的版本
+git checkout -- file命令中的“--”很重要，没有“--”，就变成了“创建一个新分支”的命令
+git checkout -- readme.txt
+
+12、已经add了，把暂存区的修改撤销掉，同时调用11条，丢弃工作区修改：
+git reset HEAD readme.txt
+
+13、文件删除：
+git rm test.txt
+
+14创建SSH Key：
+ssh-keygen -t rsa -C "youremail@example.com"
+
+15、关联远程仓库：
+git remote add origin git@github.com:michaelliao/learngit.git
+
+16、把本地库的内容推送到远程库：
+git push -u origin master
+
+17、从远程库克隆到本地库：
+git clone git@github.com:michaelliao/gitskills.git
+
+18、创建dev分支，切换到dev分支：
+git checkout -b dev
+
+19、命令上加上-b表示创建并切换，相当于以下两条命令：
+git branch dev
+git checkout dev
+
+20、查看当前分支：
+git branch
+
+21、切换回master分支：
+git checkout master
+
+22、把dev分支合并到master分支上：
+git merge dev
+
+23、删除dev分支：
+git branch -d dev
+
+24、查看分支的合并情况：
+git log --graph --pretty=oneline --abbrev-commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
